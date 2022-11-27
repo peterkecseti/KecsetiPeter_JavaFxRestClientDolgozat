@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bmszcpatrik.kecsetipeter_javafxrestclientdolgozat.ListMemberController">
+    <children>
+        <HBox spacing="20.0">
+            <children>
+                <Button fx:id="insertButton" lineSpacing="20.0" mnemonicParsing="false" onAction="#insertClick" text="Insert" />
+                <Button fx:id="updateButton" lineSpacing="20.0" mnemonicParsing="false" onAction="#updateClick" text="Update" />
+                <Button fx:id="deleteButton" lineSpacing="20.0" mnemonicParsing="false" onAction="#deleteClick" text="Delete" />
+            </children>
+        </HBox>
+        <TableView fx:id="tableTable" prefHeight="167.0" prefWidth="573.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="#" />
+                <TableColumn fx:id="nameCol" prefWidth="164.0" text="Név" />
+            <TableColumn fx:id="minositesCol" prefWidth="143.20001220703125" text="Minősítés" />
+                <TableColumn fx:id="sizeCol" prefWidth="106.40008544921875" text="Méret" />
+                <TableColumn fx:id="ageCol" prefWidth="105.60009765625" text="Age" />
+            <TableColumn fx:id="elementaryCol" prefWidth="138.39996337890625" text="Elementary School" />
+            </columns>
+        </TableView>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
